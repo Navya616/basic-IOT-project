@@ -1,0 +1,16 @@
+#define BLYNK_TEMPLATE_ID "TMPLR9be_EO3"
+#define BLYNK_DEVICE_NAME "iotworkshop"
+#define BLYNK_AUTH_TOKEN "Y0JoU_NwuWNaGyikccpuA9X1QKaiWgya"; //authentication id
+#include <BlynkSimpleEsp8266.h>
+char a[]=BLYNK_AUTH_TOKEN;
+char b[]="Redmi8";  //hotspot userid
+char c[]="prameela"; //hotspot password
+void setup() {
+  // put your setup code here, to run once:
+   Blynk.begin(a,b,c);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+   Blynk.run();
+}
